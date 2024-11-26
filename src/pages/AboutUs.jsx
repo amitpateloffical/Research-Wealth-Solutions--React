@@ -11,7 +11,7 @@ const AboutUs = () => {
               <p>
                 <span className="font-semibold">Research Wealth Solutions</span>,
                 led by our founder and Chief Analyst{" "}
-                <span className="font-semibold">Ms. abcd</span>, is a SEBI
+                <span className="font-semibold">Miss Shruti Mishra</span>, is a SEBI
                 Registered Research Analyst service. With her impressive academic
                 background of <span className="italic">B.Com and M.Com</span> and
                 her exceptional expertise in the Indian Financial Market, Sanchi
@@ -27,7 +27,7 @@ const AboutUs = () => {
                 generate wealth through value investing.
               </p>
               <p>
-                Ms. abcd believes in identifying and recommending only futuristic
+                Miss Shruti Mishra believes in identifying and recommending only futuristic
                 stocks with the potential to become super multi-baggers. This
                 vision and dedication led her to clear all three SEBI (Research
                 Analyst) exams, equipping her to guide investors toward financial
@@ -114,7 +114,7 @@ const AboutUs = () => {
                 Sector 17, Chandigarh, 160017
               </p>
               <p className="text-gray-700">
-                <strong>Phone:</strong> +91 00000 00000
+                <strong>Phone:</strong> +91 7693898747
               </p>
               <p className="text-gray-700">
                 <strong>Email:</strong> info@researchwealthsolutions.com

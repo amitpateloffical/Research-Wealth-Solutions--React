@@ -1,0 +1,157 @@
+const Services = () => {
+  return (
+    <>
+      <div className="flex  justify-center h-screen bg-gray-100 py-8">
+        <div className="grid grid-cols-1 md:grid-cols-[3fr_1fr] gap-4 w-full max-w-6xl px-4">
+          {/* Left Table */}
+          <div className="overflow-x-auto">
+            <table className="min-w-full table-auto border-collapse bg-white shadow-lg rounded-lg w-5/6">
+              <thead>
+                <tr className="bg-[rgb(41,170,152)] text-white">
+                  <th className="py-4 px-6 text-left text-lg">Package</th>
+                  <th className="py-4 px-6 text-center text-lg">Monthly</th>
+                  <th className="py-4 px-6 text-center text-lg">Quarterly</th>
+                  <th className="py-4 px-6 text-center text-lg">Six Months</th>
+                  <th className="py-4 px-6 text-center text-lg">Yearly</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr className="border-b border-gray-300 hover:bg-[rgb(218,245,240)]">
+                  <td className="py-4 px-6 text-left text-gray-800 font-medium">
+                    BTST+SHORT TERM CALLS
+                  </td>
+                  <td className="py-4 px-6 text-center">
+                    <input
+                      type="radio"
+                      name="monthly"
+                      id="monthly-1"
+                      className="mr-2"
+                    />
+                    <label
+                      htmlFor="monthly-1"
+                      className="text-gray-700 font-medium"
+                    >
+                      100
+                    </label>
+                  </td>
+                  <td className="py-4 px-6 text-center">
+                    <input
+                      type="radio"
+                      name="quarterly"
+                      id="quarterly-1"
+                      className="mr-2"
+                    />
+                    <label
+                      htmlFor="quarterly-1"
+                      className="text-gray-700 font-medium"
+                    >
+                      250
+                    </label>
+                  </td>
+                  <td className="py-4 px-6 text-center">
+                    <input
+                      type="radio"
+                      name="sixmonths"
+                      id="sixmonths-1"
+                      className="mr-2"
+                    />
+                    <label
+                      htmlFor="sixmonths-1"
+                      className="text-gray-700 font-medium"
+                    >
+                      450
+                    </label>
+                  </td>
+                  <td className="py-4 px-6 text-center">
+                    <input
+                      type="radio"
+                      name="yearly"
+                      id="yearly-1"
+                      className="mr-2"
+                    />
+                    <label
+                      htmlFor="yearly-1"
+                      className="text-gray-700 font-medium"
+                    >
+                      800
+                    </label>
+                  </td>
+                </tr>
+                <tr className="border-b border-gray-300 hover:bg-[rgb(218,245,240)]">
+                  <td className="py-4 px-6 text-left text-gray-800 font-medium">
+                    MULTIBAGGER STOCKS + SHORT TERM CALL + BTST CALLS.
+                  </td>
+                  <td className="py-4 px-6 text-center">
+                    <input
+                      type="radio"
+                      name="monthly"
+                      id="monthly-2"
+                      className="mr-2"
+                    />
+                    <label
+                      htmlFor="monthly-2"
+                      className="text-gray-700 font-medium"
+                    >
+                      150
+                    </label>
+                  </td>
+                  <td className="py-4 px-6 text-center">
+                    <input
+                      type="radio"
+                      name="quarterly"
+                      id="quarterly-2"
+                      className="mr-2"
+                    />
+                    <label
+                      htmlFor="quarterly-2"
+                      className="text-gray-700 font-medium"
+                    >
+                      400
+                    </label>
+                  </td>
+                  <td className="py-4 px-6 text-center">
+                    <input
+                      type="radio"
+                      name="sixmonths"
+                      id="sixmonths-2"
+                      className="mr-2"
+                    />
+                    <label
+                      htmlFor="sixmonths-2"
+                      className="text-gray-700 font-medium"
+                    >
+                      750
+                    </label>
+                  </td>
+                  <td className="py-4 px-6 text-center">
+                    <input
+                      type="radio"
+                      name="yearly"
+                      id="yearly-2"
+                      className="mr-2"
+                    />
+                    <label
+                      htmlFor="yearly-2"
+                      className="text-gray-700 font-medium"
+                    >
+                      1300
+                    </label>
+                  </td>
+                </tr>
+                {/* <!-- Add more rows as needed --> */}
+              </tbody>
+            </table>
+          </div>
+
+          {/* Right Payment Card */}
+          <div className="bg-white p-6 rounded-lg shadow-lg w-full md:w-96">
+            <h2 className="text-2xl font-bold text-center text-teal-500 mb-4">
+              Payment Info
+            </h2>
+          </div>
+        </div>
+      </div>
+    </>
+  );
+};
+export default Services;

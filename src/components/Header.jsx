@@ -13,9 +13,9 @@ function Header() {
                          <div className="flex gap-4 items-center">
                               <Link to="/" className="uppercase font-medium text-sm border-b-2 border-transparent transition-colors duration-300 hover:border-customTheme-theme1">Home</Link>
                               <Link to="/about-us" className="uppercase font-medium text-sm border-b-2 border-transparent transition-colors duration-300 hover:border-customTheme-theme1">About Us</Link>
-                              <Link to="/" className="uppercase font-medium text-sm border-b-2 border-transparent transition-colors duration-300 hover:border-customTheme-theme1">Services</Link>
-                              <Link to="/" className="uppercase font-medium text-sm border-b-2 border-transparent transition-colors duration-300 hover:border-customTheme-theme1">Products</Link>
-                              <Link to="/" className="uppercase font-medium text-sm border-b-2 border-transparent transition-colors duration-300 hover:border-customTheme-theme1">Intraday Calls</Link>
+                              <Link to="/services" className="uppercase font-medium text-sm border-b-2 border-transparent transition-colors duration-300 hover:border-customTheme-theme1">Services</Link>
+                              <Link to="/products" className="uppercase font-medium text-sm border-b-2 border-transparent transition-colors duration-300 hover:border-customTheme-theme1">Products</Link>
+                              <Link to="/intraday-calls" className="uppercase font-medium text-sm border-b-2 border-transparent transition-colors duration-300 hover:border-customTheme-theme1">Intraday Calls</Link>
                               <Link to="/" className="uppercase font-medium text-sm border-b-2 border-transparent transition-colors duration-300 hover:border-customTheme-theme1">Our Branches</Link>
                               <Link to="/" className="uppercase font-medium text-sm border-b-2 border-transparent transition-colors duration-300 hover:border-customTheme-theme1">Contact Us</Link>
                               <Link to="/login" className="uppercase font-medium text-sm cursor-pointer px-5 py-2 text-white rounded bg-customTheme-theme1 hover:bg-customTheme-theme2">

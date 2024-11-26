@@ -54,7 +54,7 @@ export default function Footer() {
                                              {/* <span className="text-lg inline-block pt-1"><Location01Icon /></span> */}
                                              <a href="#" target="_blank">SCO 150 & 55, Bridge Market, 17C, Sector 17, Chandigarh, 160017.</a>
                                         </div>
-                                        <a className="flex gap-3 items-center" href={`tel:+910000000000`}>+91 00000 00000</a>
+                                        <a className="flex gap-3 items-center" href={`tel:+910000000000`}>+91 7693898747</a>
                                         <a className="flex gap-3 items-center" href={`mailto:info@example.com`}>info@researchwealthsolutions.com</a>
                                         <div className="social flex gap-2 sm:gap-3 items-center mt-2">
                                              <a href="#" target="_blank" className="border border-black rounded-full grid place-items-center w-8 h-8 text-sm sm:text-lg hover:bg-customTheme-theme2 hover:text-white hover:border-customTheme-theme1"><FaInstagram /></a>

@@ -15,7 +15,10 @@ const Login = () => {
 
   return (
     <div className="flex items-center justify-center min-h-screen bg-gray-100">
-      <div className="max-w-md w-full bg-white rounded-lg shadow-md p-8">
+      <div className="max-w-md w-full bg-white rounded-lg shadow-md px-8 py-8">
+        <div className="pb-4 max-w-44 mx-auto text-center">
+          <img src="/images/logo.png" alt=""  />
+        </div>
         <h2 className="text-2xl font-bold text-center text-gray-700 mb-6">
           Login to Your Account
         </h2>
@@ -34,7 +37,7 @@ const Login = () => {
               value={formData.username}
               onChange={handleChange}
               placeholder="Enter your username"
-              className="w-full mt-1 p-2 border border-gray-300 rounded-lg focus:ring-blue-500 focus:border-blue-500"
+              className="w-full mt-1 p-2 border border-gray-300 rounded-lg focus:ring-customTheme-theme1 focus:border-customTheme-theme1"
               required
             />
           </div>
@@ -54,7 +57,7 @@ const Login = () => {
               value={formData.password}
               onChange={handleChange}
               placeholder="Enter your password"
-              className="w-full mt-1 p-2 border border-gray-300 rounded-lg focus:ring-blue-500 focus:border-blue-500"
+              className="w-full mt-1 p-2 border border-gray-300 rounded-lg focus:ring-customTheme-theme1 focus:border-customTheme-theme1"
               required
             />
           </div>
@@ -64,7 +67,7 @@ const Login = () => {
             <input
               type="checkbox"
               id="remember-me"
-              className="w-4 h-4 text-blue-500 border-gray-300 rounded focus:ring-blue-400 focus:ring-opacity-25"
+              className="w-4 h-4 bg-customTheme-theme1 border-gray-300 rounded focus:ring-customTheme-theme1 focus:ring-opacity-25"
             />
             <label
               htmlFor="remember-me"
@@ -77,26 +80,26 @@ const Login = () => {
           {/* Login Button */}
           <button
             type="submit"
-            className="w-full bg-blue-500 text-white p-2 rounded-lg hover:bg-blue-600 transition duration-200"
+            className="w-full bg-customTheme-theme1 text-white p-2 rounded-lg hover:bg-green-600 transition duration-200"
           >
             Login
           </button>
         </form>
 
         {/* Divider */}
-        <div className="mt-6 flex items-center justify-between">
+        {/* <div className="mt-6 flex items-center justify-between">
           <span className="border-t flex-grow border-gray-300"></span>
           <span className="mx-3 text-sm text-gray-500">OR</span>
           <span className="border-t flex-grow border-gray-300"></span>
-        </div>
+        </div> */}
 
         {/* Sign Up Link */}
-        <p className="mt-6 text-center text-sm text-gray-600">
+        {/* <p className="mt-6 text-center text-sm text-gray-600">
           Dont have an account?{" "}
           <a href="#" className="text-blue-500 hover:underline">
             Sign Up
           </a>
-        </p>
+        </p> */}
       </div>
     </div>
   );
