@@ -11,8 +11,8 @@ const AboutUs = () => {
               <p>
                 <span className="font-semibold">Research Wealth Solutions</span>,
                 led by our founder and Chief Analyst{" "}
-                <span className="font-semibold">Miss Shruti Mishra</span>, is a SEBI
-                Registered Research Analyst service. With her impressive academic
+                <span className="font-semibold">Miss Shruti Mishra</span>,
+                 Research Analyst service. With her impressive academic
                 background of <span className="italic">B.Com and M.Com</span> and
                 her exceptional expertise in the Indian Financial Market, Sanchi
                 has been passionately studying and analyzing the market for over
