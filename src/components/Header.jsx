@@ -73,6 +73,7 @@
 
 import { useState } from "react";
 import { Link } from "react-router-dom";
+import { IoMdMenu } from "react-icons/io";
 
 function Header() {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -98,23 +99,10 @@ function Header() {
           {/* Hamburger Icon */}
           <button
             onClick={toggleMenu}
-            className="lg:hidden text-gray-700 focus:outline-none"
+            className="lg:hidden text-gray-700 font-bold focus:outline-none text-3xl"
             aria-label="Toggle Menu"
           >
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              className="h-6 w-6"
-              fill="none"
-              viewBox="0 0 24 24"
-              stroke="currentColor"
-            >
-              <path
-                strokeLinecap="round"
-                strokeLinejoin="round"
-                strokeWidth="2"
-                d="M4 6h16M4 12h16m-7 6h7"
-              />
-            </svg>
+            <IoMdMenu />
           </button>
 
           {/* Navigation Links */}
@@ -127,7 +115,7 @@ function Header() {
               <li>
                 <Link
                   to="/"
-                  className="uppercase font-medium text-sm border-b-2 border-transparent transition-colors duration-300 hover:border-customTheme-theme1"
+                  className="uppercase font-bold text-sm border-b-2 border-transparent transition-colors duration-300 hover:border-customTheme-theme1"
                   onClick={() => setMenuOpen(false)}
                 >
                   Home
@@ -136,7 +124,7 @@ function Header() {
               <li>
                 <Link
                   to="/about-us"
-                  className="uppercase font-medium text-sm border-b-2 border-transparent transition-colors duration-300 hover:border-customTheme-theme1"
+                  className="uppercase font-bold text-sm border-b-2 border-transparent transition-colors duration-300 hover:border-customTheme-theme1"
                   onClick={() => setMenuOpen(false)}
                 >
                   About Us
@@ -145,7 +133,7 @@ function Header() {
               <li>
                 <Link
                   to="/services"
-                  className="uppercase font-medium text-sm border-b-2 border-transparent transition-colors duration-300 hover:border-customTheme-theme1"
+                  className="uppercase font-bold text-sm border-b-2 border-transparent transition-colors duration-300 hover:border-customTheme-theme1"
                   onClick={() => setMenuOpen(false)}
                 >
                   Services
@@ -154,7 +142,7 @@ function Header() {
               <li>
                 <Link
                   to="/products"
-                  className="uppercase font-medium text-sm border-b-2 border-transparent transition-colors duration-300 hover:border-customTheme-theme1"
+                  className="uppercase font-bold text-sm border-b-2 border-transparent transition-colors duration-300 hover:border-customTheme-theme1"
                   onClick={() => setMenuOpen(false)}
                 >
                   Products
@@ -163,7 +151,7 @@ function Header() {
               <li>
                 <Link
                   to="/intraday-calls"
-                  className="uppercase font-medium text-sm border-b-2 border-transparent transition-colors duration-300 hover:border-customTheme-theme1"
+                  className="uppercase font-bold text-sm border-b-2 border-transparent transition-colors duration-300 hover:border-customTheme-theme1"
                   onClick={() => setMenuOpen(false)}
                 >
                   Intraday Calls
@@ -172,7 +160,7 @@ function Header() {
               <li>
                 <Link
                   to="/our-branches"
-                  className="uppercase font-medium text-sm border-b-2 border-transparent transition-colors duration-300 hover:border-customTheme-theme1"
+                  className="uppercase font-bold text-sm border-b-2 border-transparent transition-colors duration-300 hover:border-customTheme-theme1"
                   onClick={() => setMenuOpen(false)}
                 >
                   Our Branches
@@ -181,7 +169,7 @@ function Header() {
               <li>
                 <Link
                   to="/contact-us"
-                  className="uppercase font-medium text-sm border-b-2 border-transparent transition-colors duration-300 hover:border-customTheme-theme1"
+                  className="uppercase font-bold text-sm border-b-2 border-transparent transition-colors duration-300 hover:border-customTheme-theme1"
                   onClick={() => setMenuOpen(false)}
                 >
                   Contact Us
@@ -190,7 +178,7 @@ function Header() {
               <li>
                 <Link
                   to="/login"
-                  className="uppercase font-medium text-sm cursor-pointer px-5 py-2 text-white rounded bg-customTheme-theme1 hover:bg-customTheme-theme2"
+                  className="uppercase font-bold text-sm cursor-pointer px-5 py-2 text-white rounded bg-customTheme-theme1 hover:bg-customTheme-theme2"
                   onClick={() => setMenuOpen(false)}
                 >
                   Log In

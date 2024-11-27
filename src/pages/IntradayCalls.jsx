@@ -59,7 +59,7 @@ const IntradayCalls = () => {
       </div>
       {/* Cards Section of Intraday */}
       <div
-        className="max-w-6xl mx-8 lg:mx-auto min-h-screen"
+        className="max-w-6xl mx-8 lg:mx-auto min-h-screen mt-14 mb-14"
         style={{
           background: "#ada996",
           backgroundImage:

@@ -190,7 +190,7 @@ const OurBranches = () => {
                 </div>
               ))}
             </div>
-            <div className="text-center mt-10">
+            <div className="text-center lg:text-left mt-10">
               <button
                 type="submit"
                 className="bg-blue-500  mt-4 hover:bg-blue-600 text-white font-light py-3 px-4 rounded"
@@ -324,7 +324,7 @@ const OurBranches = () => {
         </div>
 
         {/* Headings Section of MUltibagger Stocks */}
-        <div className="max-w-4xl bg-white p-6 rounded-lg shadow-lg mx-10">
+        <div className="max-w-4xl bg-white p-6 rounded-lg shadow-lg mx-auto">
           <p>
             After, huge request from our clients we have started providing a
             special service, called STOCKS 10x, to our worthy clients since
