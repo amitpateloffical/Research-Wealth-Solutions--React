@@ -35,7 +35,7 @@ const AboutUs = () => {
               </p>
             </div>
   
-            <div className="mt-6">
+            {/* <div className="mt-6">
               <h2 className="text-xl font-semibold mb-2 text-teal-500">
                 Our Mission
               </h2>
@@ -44,7 +44,7 @@ const AboutUs = () => {
                 recommendations, helping them achieve financial growth and
                 security through value-driven investing.
               </p>
-            </div>
+            </div> */}
           </div>
   
           {/* Right Section */}
