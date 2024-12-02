@@ -1,8 +1,11 @@
 const Services = () => {
   return (
     <>
+      <header className="bg-teal-700 text-white text-center py-6 shadow-lg">
+        <h1 className="text-3xl font-bold uppercase">Services</h1>
+      </header>
       <div className="flex  justify-center h-screen bg-gray-100 py-8">
-        <div className="grid grid-cols-1 md:grid-cols-[3fr_1fr] gap-4 w-full max-w-6xl px-4">
+        <div className="w-full max-w-6xl px-4">
           {/* Left Table */}
           <div className="overflow-x-auto">
             <table className="min-w-full table-auto border-collapse bg-white shadow-lg rounded-lg w-5/6">
@@ -144,11 +147,11 @@ const Services = () => {
           </div>
 
           {/* Right Payment Card */}
-          <div className="bg-white p-6 rounded-lg shadow-lg w-full md:w-96">
+          {/* <div className="bg-white p-6 rounded-lg shadow-lg w-full md:w-96">
             <h2 className="text-2xl font-bold text-center text-teal-500 mb-4">
               Payment Info
             </h2>
-          </div>
+          </div> */}
         </div>
       </div>
     </>

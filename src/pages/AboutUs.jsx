@@ -1,5 +1,9 @@
 const AboutUs = () => {
     return (
+      <>
+       <header className="bg-teal-700 text-white text-center py-6 shadow-lg">
+        <h1 className="text-3xl font-bold uppercase">ABOUT US</h1>
+      </header>
       <div className="bg-gray-100 min-h-screen flex items-center justify-center px-4 py-8">
         <div className="container max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-6">
           {/* Left Section - About Us Content */}
@@ -26,16 +30,16 @@ const AboutUs = () => {
                 equities, she decided to contribute to society by helping people
                 generate wealth through value investing.
               </p>
-              <p>
+              {/* <p>
                 Miss Shruti Mishra believes in identifying and recommending only futuristic
                 stocks with the potential to become super multi-baggers. This
                 vision and dedication led her to clear all three SEBI (Research
                 Analyst) exams, equipping her to guide investors toward financial
                 success in the stock market.
-              </p>
+              </p> */}
             </div>
   
-            {/* <div className="mt-6">
+            <div className="mt-6">
               <h2 className="text-xl font-semibold mb-2 text-teal-500">
                 Our Mission
               </h2>
@@ -44,7 +48,7 @@ const AboutUs = () => {
                 recommendations, helping them achieve financial growth and
                 security through value-driven investing.
               </p>
-            </div> */}
+            </div>
           </div>
   
           {/* Right Section */}
@@ -123,6 +127,7 @@ const AboutUs = () => {
           </div>
         </div>
       </div>
+      </>
     );
   };
   

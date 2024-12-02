@@ -3,7 +3,11 @@ import { Link } from "react-router-dom";
 const Products = () => {
   return (
     <>
+      <header className="bg-teal-700 text-white text-center py-6 shadow-lg">
+        <h1 className="text-3xl font-bold uppercase">Products</h1>
+      </header>
       <div className="flex justify-center  bg-gray-100 px-4 pt-8 pb-4">
+     
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-6xl w- md:w-1/2 ">
           {/* Card 1 */}
           <Link
