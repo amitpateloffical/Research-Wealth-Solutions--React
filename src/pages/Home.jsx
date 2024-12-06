@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import { FaLinkedin } from "react-icons/fa";
+// import { FaLinkedin } from "react-icons/fa";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Navigation, Pagination, Autoplay } from "swiper/modules";
 
@@ -8,8 +8,7 @@ import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
 function Home() {
-
- const data = [
+  const data = [
     {
       detail:
         "Goodluck Capital would be the first investment solution that encourages its students / clients to do their own research as well. Thanks for your continuous support!",
@@ -48,92 +47,44 @@ function Home() {
       <div id="banner">
         <div className="relative">
           <img
-            src={`${origin}/images/banner.jpg`}
-            alt="..."
-            className="w-full object-cover min-h-80 max-h-[32rem] "
+            src="https://wallpapers.com/images/high/inflation-stock-market-exhange-4kdmhjbew2br9aey.webp"
+            alt="Banner Image"
+            className="w-full object-cover min-h-[30rem] max-h-[40rem]" // Adjusted height for a taller banner
           />
-          <div className="absolute top-0 left-0 w-full h-full flex items-center">
-            <div className="w-full px-2 py-3">
+          <div className="absolute top-0 left-0 w-full h-full bg-gradient-to-r from-teal-700 via-green-700 to-lime-800 opacity-75 flex items-center">
+            {" "}
+            {/* Background opacity only */}
+            <div className="w-full px-4 py-6">
+              {" "}
+              {/* Adjusted padding for better spacing */}
               <div className="max-w-7xl mx-auto">
-                <div className="mb-5 pl-2">
-                  <div className="text-white text-2xl sm:text-4xl md:text-5xl lg:text-6xl font-bold max-w-3xl ">
+                <div className="mb-6 pl-4">
+                  <div className="text-white text-3xl sm:text-5xl md:text-6xl lg:text-7xl font-bold max-w-3xl">
                     Empowering Traders to Seize Every Opportunity!
                   </div>
                 </div>
-                <Link
-                  to="/"
-                  className="uppercase ml-2 font-medium text-sm cursor-pointer px-5 py-3 rounded bg-white"
-                >
-                  Explore More
-                </Link>
-
-                <div className="mt-8 px-4">
-                  <h1 className="text-white text-base sm:text-4xl md:text-3xl lg:text-3xl font-bold pb-3">
-                    <span className="text-yellow-400">Be Smart</span> with your
+                {/* <Link
+          to="/"
+          className="uppercase ml-2 font-medium text-sm cursor-pointer px-5 py-4 rounded bg-yellow-700 text-black drop-shadow-lg"
+        >
+          Explore More
+        </Link> */}
+                <div className="mt-10 px-6">
+                  <h1 className="text-white text-xl sm:text-4xl md:text-5xl lg:text-5xl font-bold pb-4">
+                    <span className="text-green-500">Be SMART</span> with your
                     money. We tell you three keys to unlock the{" "}
-                    <span className="text-teal-400">profit</span> potential .
+                    <span className="text-teal-400">profit</span> potential.
                   </h1>
-                  <h2 className="text-white text-base sm:text-4xl md:text-3xl lg:text-3xl font-bold">
-                    <span className="text-yellow-400">WHERE</span> to invest?
-                    When to invest and{" "}
-                    <span className="text-yellow-400">HOW LONG</span> to invest?
+                  <h2 className="text-white text-xl sm:text-4xl md:text-5xl lg:text-5xl font-bold">
+                    <span className="text-green-500">WHERE</span> to invest?{" "}
+                    <span className="text-green-500">WHEN</span> to invest and{" "}
+                    <span className="text-teal-500">HOW LONG</span> to invest?
                   </h2>
                 </div>
               </div>
             </div>
           </div>
         </div>
-
-        {/* About us */}
-        {/* <div className="w-full h-[58rem] lg:h-[40rem] bg-[#F4F4F4]">
-          <div className="flex flex-col lg:flex-row lg:justify-center  items-center pt-10 lg:p-20">
-            <div className="w-[20rem] lg:w-[30rem]  mx-auto  lg:p-6 rounded-lg ">
-              <h1 className="text-4xl font-bold text-left text-gray-700 mb-4 ">
-                About Us
-              </h1>
-              <p className="mb-3 text-sm">
-                Research Wealth Solutions, led by our founder and Chief Analyst
-                Miss Shruti Mishra, Research Analyst service. With her
-                impressive academic background of B.Com and M.Com and her
-                exceptional expertise in the Indian Financial Market, Sanchi has
-                been passionately studying and analyzing the market for over a
-                decade.x
-              </p>
-
-              <p>
-                Miss Shruti Mishra believes in identifying and recommending only
-                futuristic stocks with the potential to become super
-                multi-baggers. This vision and dedication led her to clear all
-                three SEBI (Research Analyst) exams, equipping her to guide
-                investors toward financial success in the stock market
-              </p>
-            </div>
-
-            <div className="w-[20rem] lg:w-[30rem] mb-10 h-[26rem] mt-10  mx-auto bg-white pt-8  lg:p-6 rounded-lg shadow-lg ">
-              <img
-                src="No Image Available"
-                className="h-32 w-32 object-cover mx-auto border rounded-full text-center pt-10"
-                alt="No Image Available"
-              />
-              <h3 className="text-3xl font-medium text-center text-blue-700 mb-2 pt-5">
-                Shruti Mishra
-              </h3>
-              <p className="text-lg font-medium text-center text-gray-700">
-                FOUNDER
-              </p>
-              <p className="text-3xl font-bold px-36 md:px-52 lg:px-52 text-center text-blue-500 pt-2">
-                <FaLinkedin />
-              </p>
-
-              <h2 className="text-center pt-5">
-                <span className="font-semibold">B.Com</span> &{" "}
-                <span className="font-semibold">M.Com </span> and her
-                exceptional expertise in the{" "}
-                <span className="font-semibold">Indian Financial Market</span>
-              </h2>
-            </div>
-          </div>
-        </div> */}
 
         {/* Certified Market Expert By */}
         <div className="w-full h-[32rem] lg:h-[18rem] bg-white">
@@ -156,142 +107,149 @@ function Home() {
         </div>
 
         {/* What we Do */}
-        <div className="w-full min-h-screen bg-[#F4F4F4]">
-          <h2 className="text-center text-2xl md:text-3xl lg:text-3xl font-bold text-gray-700 pt-10 uppercase ">
-            <u>What We Do</u>
-          </h2>
-          <div className="flex flex-col lg:flex-row justify-center">
-            {/* Short Term Traning Advice */}
-            <div
-              className="w-[23rem] lg:w-[30rem] mb-10 h-[48rem] lg:h-[45rem] mt-10  mx-auto  pt-8  lg:p-6 rounded-lg shadow-lg "
-              style={{
-                background: "#8e2de2",
-                backgroundImage:
-                  "-webkit-linear-gradient(to right, #8e2de2, #4a00e0)",
-                backgroundImage: "linear-gradient(to right, #8e2de2, #4a00e0)",
-              }}
-            >
-              <h2 className="text-white text-2xl text-center mb-2">
-                Short Term Traning Advice
+        <div className="relative">
+          <img
+            src="https://static.vecteezy.com/system/resources/thumbnails/019/569/174/small_2x/stock-market-bull-vs-bear-graph-stock-market-graph-trading-investment-financial-stock-exchange-financial-stock-graph-chart-business-crisis-crash-loss-grow-up-gain-profits-win-up-trend-bullish-bearish-free-photo.jpg"
+            alt="Banner Image"
+            className="w-full object-cover min-h-[40rem] max-h-[50rem]" // Increased height for a taller banner
+          />
+          {/* Overlay Gradient */}
+          <div className="absolute top-0 left-0 w-full h-full bg-gradient-to-r from-teal-700 via-blue-700 to-lime-800 opacity-80 flex items-center">
+            <div className="max-w-6xl mx-auto px-6 sm:px-8 lg:px-16">
+              <h2 className="text-5xl font-bold text-center text-white mb-12">
+                What We Do
               </h2>
-              <p className="text-gray-400 text-center mb-5">
-                Holding Period: 1-3 weeks
-              </p>
 
-              <p className="text-white text-left px-5">
-                Leverage our knowledge to trade with confidence. Expert Advice
-                to make money having specific target and a strict stoploss
-              </p>
-
-              <div className="text-white text-left text-lg px-5 pt-8">
-                <p className="mb-2">✅ top 9-10 trading advice/month</p>
-                <p className="mb-2">✅ profit proability 9-10% per trade</p>
-                <p className="mb-2">✅ short term swing trade (1-2 weeks)</p>
-                <p>✅ risk reward ratio from 1:2 to 1:4</p>
-              </div>
-
-              {/* Pricing Section */}
-              <div className="px-5">
-                <h2 className="text-green-500 text-2xl text-left mt-10 ">
-                  Pricing
-                </h2>
-                <div className="grid grid-cols-4 text-center text-white gap-10 pt-5 text-sm">
-                  <p>1 month</p>
-                  <span>Rs 5000</span>
-                  <span className="text-red-500 ">-</span>
-                  <p>Rs 5000</p>
+              {/* Content Section */}
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-12">
+                {/* Short Term Trading Advice */}
+                <div className="bg-[#161e2e] bg-opacity-90 p-8 rounded-lg shadow-xl transition-all duration-300 hover:scale-105">
+                  <h3 className="text-3xl font-semibold text-white mb-6">
+                    Short Term Trading Advice
+                  </h3>
+                  <p className="text-lg text-white mb-6">
+                    Leverage our knowledge to trade with confidence. Expert
+                    advice for making money with specific targets and strict
+                    stoploss.
+                  </p>
+                  <ul className="text-white space-y-4 mb-6">
+                    <li>
+                      <span className="font-semibold">
+                        Top 9-10 trading advice/month
+                      </span>
+                    </li>
+                    <li>
+                      <span className="font-semibold">
+                        Profit probability 9-10% per trade
+                      </span>
+                    </li>
+                    <li>
+                      <span className="font-semibold">
+                        Short term swing trade (1-2 weeks)
+                      </span>
+                    </li>
+                    <li>
+                      <span className="font-semibold">
+                        Risk reward ratio from 1:2 to 1:4
+                      </span>
+                    </li>
+                  </ul>
+                  <div className="text-white space-y-4">
+                    <p className="font-bold text-lg">Pricing</p>
+                    <div className="space-y-2">
+                      <div className="flex justify-between">
+                        <span>1 Month</span>
+                        <span className="line-through text-gray-400">
+                          ₹ 5000
+                        </span>
+                        <span>₹ 5000</span>
+                      </div>
+                      <div className="flex justify-between">
+                        <span>3 Months</span>
+                        <span className="line-through text-gray-400">
+                          ₹ 15000
+                        </span>
+                        <span>₹ 11,900</span>
+                      </div>
+                      <div className="flex justify-between">
+                        <span>6 Months</span>
+                        <span className="line-through text-gray-400">
+                          ₹ 30000
+                        </span>
+                        <span>₹ 19,900</span>
+                      </div>
+                      <div className="flex justify-between">
+                        <span>12 Months</span>
+                        <span className="line-through text-gray-400">
+                          ₹ 60000
+                        </span>
+                        <span>₹ 29,900</span>
+                      </div>
+                    </div>
+                    <button className="w-full py-3 px-6 bg-teal-700 text-black font-semibold rounded-lg mt-4 hover:bg-teal-800 transition duration-200">
+                      Subscribe Now
+                    </button>
+                  </div>
                 </div>
 
-                <div className="grid grid-cols-4 text-center text-sm text-white gap-10 pt-5">
-                  <p>3 month</p>
-                  <span>Rs 15000</span>
-                  <span className="text-red-500 ">20% Off</span>
-                  <p>Rs 11,900</p>
-                </div>
-
-                <div className="grid grid-cols-4 text-center text-white gap-10 pt-5 text-sm">
-                  <p>6 month</p>
-                  <span>Rs 30000</span>
-                  <span className="text-red-500 ">35% Off</span>
-                  <p>Rs 19,900</p>
-                </div>
-
-                <div className="grid grid-cols-4 text-center text-white gap-10 pt-5 text-sm">
-                  <p>12 month</p>
-                  <span>Rs 60000</span>
-                  <span className="text-red-500 ">50% Off</span>
-                  <p>Rs 19,900</p>
-                </div>
-
-                {/* Subscribe Now */}
-                <div className="mt-5">
-                  <button className="mx-24  whitespace-nowrap bg-green-500 hover:bg-green-600 text-white font-bold py-2 px-4 rounded mt-5">
-                    Subscribe Now
-                  </button>
-                </div>
-              </div>
-            </div>
-
-            {/* Invest Advice */}
-            <div
-              className="w-[23rem] lg:w-[30rem] mb-10 h-[50rem] lg:h-[44rem] mt-10  mx-auto  pt-8  lg:p-6 rounded-lg shadow-lg"
-              style={{
-                background: "#8e2de2",
-                backgroundImage:
-                  "-webkit-linear-gradient(to right, #8e2de2, #4a00e0)",
-                backgroundImage: "linear-gradient(to right, #8e2de2, #4a00e0)",
-              }}
-            >
-              <h2 className="text-white text-2xl text-center mb-2">
-                Invest Advice
-              </h2>
-              <p className="text-gray-400 text-center mb-5">
-                Holding Period: 1-3 weeks
-              </p>
-
-              <p className="text-white text-left px-5">
-                Create wealth by earning a higher return on your money. Let your
-                hard earned money work harder when you sleep.
-              </p>
-
-              <div className="text-white text-left text-lg px-5 pt-8">
-                <p className="mb-2">✅ top 14-16 investment advice/year</p>
-                <p className="mb-2">
-                  ✅ fundamentally strong undervalued stock
-                </p>
-                <p className="mb-2">
-                  ✅ short to medium term investment (1-2 years)
-                </p>
-                <p className="mb-2">
-                  ✅ greate margin of safety, low downside risk
-                </p>
-                <p>✅ excellent risk removed ratio from 1:6 to 1:20</p>
-              </div>
-
-              {/* Pricing Section */}
-              <div>
-                <h2 className="text-green-500 text-2xl text-left mt-10">
-                  Pricing
-                </h2>
-                <div className="grid grid-cols-4 text-white text-center gap-10 pt-5 text-sm px-5">
-                  <p>1 month</p>
-                  <span>Rs 5000</span>
-                  <span className="text-red-500 ">35% Off</span>
-                  <p>Rs 5000</p>
-                </div>
-
-                <div className="grid grid-cols-4 text-white text-center gap-10 pt-5 text-sm px-5">
-                  <p>3 month</p>
-                  <span>Rs 15000</span>
-                  <span className="text-red-500 ">50% Off</span>
-                  <p>Rs 11,900</p>
-                </div>
-
-                {/* Subscribe Now */}
-                <div className="mt-3 lg:mt-8">
-                  <button className="mx-28 lg:mx-36  whitespace-nowrap bg-green-500 hover:bg-green-600 text-white font-bold py-2 px-4 rounded mt-5">
-                    Subscribe Now
-                  </button>
+                {/* Investment Advice */}
+                <div className="bg-[#161e2e] bg-opacity-90 p-8 rounded-lg shadow-xl transition-all duration-300 hover:scale-105">
+                  <h3 className="text-3xl font-semibold text-white mb-6">
+                    Investment Advice
+                  </h3>
+                  <p className="text-lg text-white mb-6">
+                    Create wealth by earning a higher return on your money. Let
+                    your hard-earned money work harder when you sleep.
+                  </p>
+                  <ul className="text-white space-y-4 mb-6">
+                    <li>
+                      <span className="font-semibold">
+                        Top 14-16 investment advice/year
+                      </span>
+                    </li>
+                    <li>
+                      <span className="font-semibold">
+                        Fundamentally strong undervalued stock
+                      </span>
+                    </li>
+                    <li>
+                      <span className="font-semibold">
+                        Short to medium-term investment (1-2 years)
+                      </span>
+                    </li>
+                    <li>
+                      <span className="font-semibold">
+                        Great margin of safety, low downside risk
+                      </span>
+                    </li>
+                    <li>
+                      <span className="font-semibold">
+                        Excellent risk reward ratio from 1:6 to 1:20
+                      </span>
+                    </li>
+                  </ul>
+                  <div className="text-white space-y-4 pt-5">
+                    <p className="font-bold text-lg">Pricing</p>
+                    <div className="space-y-2">
+                      <div className="flex justify-between">
+                        <span>6 Months</span>
+                        <span className="line-through text-gray-400">
+                          ₹ 26000
+                        </span>
+                        <span>₹ 16,900</span>
+                      </div>
+                      <div className="flex justify-between">
+                        <span>12 Months</span>
+                        <span className="line-through text-gray-400">
+                          ₹ 52000
+                        </span>
+                        <span>₹ 25,900</span>
+                      </div>
+                    </div>
+                    <button className="w-full py-3 px-6 bg-teal-700 text-black font-semibold rounded-lg mt-4 hover:bg-teal-800 transition duration-200">
+                      Subscribe Today
+                    </button>
+                  </div>
                 </div>
               </div>
             </div>
@@ -306,7 +264,7 @@ function Home() {
           <div className="flex flex-col lg:flex-row justify-evenly px-36 gap-7 lg:gap-10 pt-10 lg:pt-20">
             <div>
               <h2 className="text-7xl text-center text-gray-400 mb-4">14</h2>
-              <p className="uppercase text-sm font-bold text-blue-800">
+              <p className="uppercase text-sm font-bold text-teal-800">
                 Years wealth creation experience
               </p>
             </div>
@@ -315,7 +273,7 @@ function Home() {
 
             <div>
               <h2 className="text-7xl  text-gray-400 mb-4">85%</h2>
-              <p className="uppercase text-sm font-bold text-blue-800">
+              <p className="uppercase text-sm font-bold text-teal-800">
                 Trading Success
               </p>
             </div>
@@ -324,7 +282,7 @@ function Home() {
 
             <div>
               <h2 className="text-7xl text-gray-400 mb-4">96%</h2>
-              <p className="uppercase text-sm font-bold text-blue-800">
+              <p className="uppercase text-sm font-bold text-teal-800">
                 Investment Success
               </p>
             </div>
@@ -333,7 +291,7 @@ function Home() {
 
             <div>
               <h2 className="text-7xl text-gray-400 mb-4">2000+</h2>
-              <p className="uppercase text-sm font-bold text-blue-800">
+              <p className="uppercase text-sm font-bold text-teal-800">
                 Client Satisfication
               </p>
             </div>
@@ -341,92 +299,73 @@ function Home() {
         </div>
 
         {/* Subscribe with Us */}
-        <div
-          className="w-full h-[43rem] lg:h-[24rem] bg-white lg:mx-auto pt-8  lg:p-6 rounded-lg shadow-lg "
-          style={{
-            background: "#8e2de2",
-            backgroundImage:
-              "-webkit-linear-gradient(to right, #8e2de2, #4a00e0)",
-            backgroundImage: "linear-gradient(to right, #8e2de2, #4a00e0)",
-          }}
-        >
-          <div className="flex flex-col lg:flex-row justify-around">
-            {/* Subscribe with us section */}
-            <div>
-              <h2 className="text-2xl md:text-3xl lg:text-4xl text-center font-bold text-white pt-5 ">
+        <div className="w-full h-auto bg-gradient-to-r from-teal-700 via-green-700 to-lime-800 py-10 lg:py-16 rounded-lg shadow-lg">
+          <div className="flex flex-col lg:flex-row items-center lg:justify-between px-6 lg:px-16">
+            {/* Subscribe Section */}
+            <div className="w-full lg:w-1/2 text-center lg:text-left mb-10 lg:mb-0">
+              <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-white mb-4">
                 Subscribe with Us
               </h2>
-              <p className="text-lg md:text-3xl lg:text-xl text-center font-bold text-white pt-3">
-                Get free Trading tip and Investment advice
+              <p className="text-lg md:text-xl text-white mb-8">
+                Get free Trading tips and Investment advice delivered to your
+                inbox.
               </p>
-
-              {/* Input and Button Form */}
-              <div className="mt-8 lg:mt-10 ml-0">
-                <form>
-                  <div className="flex flex-wrap items-center justify-start">
-                    <div className="w-full ">
-                      <div className="ml-0 lg:ml-5 bg-white border border-dashed rounded-lg p-1">
-                        <div className="flex flex-wrap items-center gap-0">
-                          <div className="w-full md:w-8/12 sm:w-8/12">
-                            <div className="relative ">
-                              <input
-                                type="email"
-                                className="form-control-md  outline-0	 font-semibold  w-full py-2"
-                                placeholder="Email"
-                              />
-                            </div>
-                          </div>
-                          <div className="w-full md:w-4/12 sm:w-4/12 mt-10 md:mt-0">
-                            <button
-                              type="button"
-                              className="btn-md bg-yellow-500 text-black w-full font-medium py-3"
-                            >
-                              Subscribe
-                            </button>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-   </div>
-                </form>
-              </div>
-              <p className="text-sm text-left text-center pl-5 font-bold text-white pt-3">
-                We respect your <span className="text-black">privacy.</span>
+              <form className="flex flex-col md:flex-row items-center justify-center lg:justify-start gap-4">
+                <input
+                  type="email"
+                  className="w-full md:w-8/12 px-4 py-3 rounded-lg shadow-md outline-none text-gray-700 placeholder-gray-500"
+                  placeholder="Enter your email"
+                />
+                <button
+                  type="button"
+                  className="w-full md:w-3/12 py-3 px-4 bg-teal-500 text-black font-bold rounded-lg shadow-md hover:bg-lime-600 transition-all"
+                >
+                  Subscribe
+                </button>
+              </form>
+              <p className="text-sm text-white mt-4 font-medium">
+                We respect your <span className="text-lime-400">privacy</span>
+                .
               </p>
             </div>
- {/* Slider Section */}
-            <div className="w-[20rem] h-[20rem] mt-10  lg:w-[30rem] mx-auto lg:mx-0">
-              <Swiper
-                modules={[Navigation, Pagination, Autoplay]}
-                spaceBetween={30}
-                slidesPerView={1}
-                pagination={{ clickable: true }}
-                autoplay={{ delay: 3000 }}
-                loop={true}
-              >
-                {data.map((item, index) => (
-                  <SwiperSlide key={index}>
-                    <div className="mt-5 w-[20rem] mx-auto">
-                      <p className="text-white text-lg text-center">
-                        {item.detail}
-                      </p>
-                      <div className="flex justify-center gap-10 mt-5">
-                        <img
-                          src=""
-                          alt="Not Found"
-                          className="w-12 h-12 object-cover rounded-full"
-                        />
-                        <div>
-                          <h2 className="text-white text-xl font-bold">
-                            {item.name}
-                          </h2>
-                          <p className="text-white">{item.profession}</p>
+
+            {/* Slider Section */}
+            <div className="w-full lg:w-1/2">
+              <div className="max-w-[25rem] lg:max-w-[30rem] mx-auto">
+                <Swiper
+                  modules={[Navigation, Pagination, Autoplay]}
+                  spaceBetween={30}
+                  slidesPerView={1}
+                  pagination={{ clickable: true }}
+                  autoplay={{ delay: 3000 }}
+                  loop={true}
+                >
+                  {data.map((item, index) => (
+                    <SwiperSlide key={index}>
+                      <div className="bg-white bg-opacity-10 p-6 rounded-lg shadow-lg text-center">
+                        <p className="text-white text-lg leading-relaxed mb-6">
+                          {item.detail}
+                        </p>
+                        <div className="flex items-center justify-center gap-4">
+                          <img
+                            src={item.image || "https://via.placeholder.com/50"}
+                            alt={item.name}
+                            className="w-16 h-16 object-cover rounded-full shadow-md"
+                          />
+                          <div>
+                            <h3 className="text-white text-xl font-bold">
+                              {item.name}
+                            </h3>
+                            <p className="text-white text-sm">
+                              {item.profession}
+                            </p>
+                          </div>
                         </div>
                       </div>
-                    </div>
-                  </SwiperSlide>
-                ))}
-              </Swiper>
+                    </SwiperSlide>
+                  ))}
+                </Swiper>
+              </div>
             </div>
           </div>
         </div>

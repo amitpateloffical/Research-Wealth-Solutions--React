@@ -57,7 +57,7 @@ function Header() {
               Our Branches
             </Link>
             <Link
-              to="/contact"
+              to="/contact-us"
               className="uppercase font-medium text-sm border-b-2 border-transparent transition-colors duration-300 hover:border-customTheme-theme1"
             >
               Contact Us

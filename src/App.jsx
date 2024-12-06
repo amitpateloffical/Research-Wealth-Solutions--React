@@ -7,6 +7,7 @@ import AboutUs from './pages/AboutUs'
 import Services from './pages/Services'
 import Products from './pages/Products'
 import IntradayCalls from './pages/IntradayCalls'
+import ContactUs from './pages/ContactUs'
 
 function App() {
   return (
@@ -20,6 +21,7 @@ function App() {
           <Route path="/services" element={<Services />} />
           <Route path="/products" element={<Products />} />
           <Route path="/intraday-calls" element={<IntradayCalls/>} />
+          <Route path="/contact-us" element={<ContactUs />} />  
 
         </Route>
       </Routes>
