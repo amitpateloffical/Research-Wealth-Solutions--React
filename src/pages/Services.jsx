@@ -4,7 +4,7 @@ const Services = () => {
       <header className="bg-teal-700 text-white text-center py-6 shadow-lg">
         <h1 className="text-3xl font-bold uppercase">Services</h1>
       </header>
-      <div className="flex  justify-center h-screen bg-gray-100 py-8">
+      <div className="flex  justify-center  bg-gray-100 pt-8 pb-4">
         <div className="w-full max-w-6xl px-4">
           {/* Left Table */}
           <div className="overflow-x-auto">
@@ -153,6 +153,33 @@ const Services = () => {
             </h2>
           </div> */}
         </div>
+      </div>
+      <div className="bg-gray-100 flex items-center justify-center px-4 sm:px-8 py-6">
+      <div className="max-w-4xl w-full bg-white rounded-xl shadow-xl p-8 sm:p-12 text-center">
+        <h1 className="text-3xl sm:text-4xl font-extrabold text-gray-800 mb-6">
+          BTST + SHORT TERM CALLS
+        </h1>
+        <p className="text-base sm:text-lg text-gray-600 leading-relaxed mb-8">
+          In this pack, you'll get daily 1 - 2 Cash Calls (BTST + Short Term
+          Calls). You will also receive important market alerts during trading
+          hours, keeping you informed for smarter decisions.
+        </p>
+
+      </div>
+      </div>
+
+      <div className="bg-gray-100 flex items-center justify-center px-4 sm:px-8 pb-10">
+      <div className="max-w-4xl w-full bg-white rounded-xl shadow-xl p-8 sm:p-12 text-center">
+        <h1 className="text-3xl sm:text-4xl font-extrabold text-gray-800 mb-6">
+          BTST + SHORT TERM CALLS
+        </h1>
+        <p className="text-base sm:text-lg text-gray-600 leading-relaxed mb-8">
+          In this pack, you'll get daily 1 - 2 Cash Calls (BTST + Short Term
+          Calls). You will also receive important market alerts during trading
+          hours, keeping you informed for smarter decisions.
+        </p>
+
+      </div>
       </div>
     </>
   );

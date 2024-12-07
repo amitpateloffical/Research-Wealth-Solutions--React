@@ -1,4 +1,4 @@
-import { Link } from "react-router-dom";
+// import { Link } from "react-router-dom";
 // import { FaLinkedin } from "react-icons/fa";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Navigation, Pagination, Autoplay } from "swiper/modules";
@@ -93,16 +93,28 @@ function Home() {
           </h2>
           <div className="grid grid-cols-1 md:grid-cols-4 gap-12 lg:gap-28 px-40 lg:mx-28 pt-10 lg:pt-20">
             <img
-              src="public\images\IFTA-logo-1-600x155.webp"
+              src="https://goodluckcapital.com/wp-content/uploads/header-logo-300x96.png"
               className="h-14"
               alt=""
             />
 
-            <img src="public\images\header-logo.webp" className="h-14" alt="" />
+            <img
+              src="https://goodluckcapital.com/wp-content/uploads/IFTA-logo-1-300x77.jpg"
+              className="h-14"
+              alt=""
+            />
 
-            <img src="public\images\z3-1.webp" className="h-14" alt="" />
+            <img
+              src="https://goodluckcapital.com/wp-content/uploads/nism-logo.png"
+              className="h-14"
+              alt=""
+            />
 
-            <img src="public\images\nism-logo.webp" className="h-14" alt="" />
+            <img
+              src="https://goodluckcapital.com/wp-content/uploads/z3-1.png"
+              className="h-14"
+              alt=""
+            />
           </div>
         </div>
 
@@ -324,8 +336,7 @@ function Home() {
                 </button>
               </form>
               <p className="text-sm text-white mt-4 font-medium">
-                We respect your <span className="text-lime-400">privacy</span>
-                .
+                We respect your <span className="text-lime-400">privacy</span>.
               </p>
             </div>
 
@@ -348,7 +359,10 @@ function Home() {
                         </p>
                         <div className="flex items-center justify-center gap-4">
                           <img
-                            src={item.image || "https://via.placeholder.com/50"}
+                            src={
+                              item.image ||
+                              "https://cdn-icons-png.flaticon.com/512/9187/9187604.png"
+                            }
                             alt={item.name}
                             className="w-16 h-16 object-cover rounded-full shadow-md"
                           />
