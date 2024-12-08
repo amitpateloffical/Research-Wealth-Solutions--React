@@ -51,7 +51,7 @@ function Header() {
               Intraday Calls
             </Link>
             <Link
-              to="/branches"
+              to="/our-branches"
               className="uppercase font-medium text-sm border-b-2 border-transparent transition-colors duration-300 hover:border-customTheme-theme1"
             >
               Our Branches
