@@ -28,7 +28,7 @@ function Home() {
     {
       detail:
         "Intially, I was trading by making guesses and on the advice of my friends and faced heavy loss. Then I started taking  the short term trading advices of Research wealth Solutions. Now I am gradually recovering all my losses.",
-      name: "Sandhya",
+      name: "Samitra",
       profession: "Tourism",
       image: "",
     },
@@ -168,34 +168,41 @@ function Home() {
                   </ul>
                   <div className="text-white space-y-4">
                     <p className="font-bold text-lg">Pricing</p>
-                    <div className="space-y-2">
+                    <div className="space-y-2  ">
                       <div className="flex justify-between">
-                        <span>1 Month</span>
-                        <span className="line-through text-gray-400">
-                          ₹ 5000
+                        <span>Basic Registration</span>
+                        <span className=" text-gray-100 ">
+                          ₹ 5500
                         </span>
-                        <span>₹ 5000</span>
-                      </div>
-                      <div className="flex justify-between">
-                        <span>3 Months</span>
-                        <span className="line-through text-gray-400">
-                          ₹ 15000
-                        </span>
-                        <span>₹ 11,900</span>
-                      </div>
-                      <div className="flex justify-between">
                         <span>6 Months</span>
-                        <span className="line-through text-gray-400">
-                          ₹ 30000
-                        </span>
-                        <span>₹ 19,900</span>
                       </div>
                       <div className="flex justify-between">
-                        <span>12 Months</span>
-                        <span className="line-through text-gray-400">
-                          ₹ 60000
+                        <span>Premium Ragiatration</span>
+                        <span className=" text-gray-100 ">
+                        ₹ 12500
                         </span>
-                        <span>₹ 29,900</span>
+                        <span>12 Months</span>
+                      </div>
+                      <div className="flex justify-between">
+                        <span>Basic Services</span>
+                        <span className=" text-gray-100">
+                          ₹ 25,000 to 50,000
+                        </span>
+                        <span>3 Months</span>
+                      </div>
+                      <div className="flex justify-between">
+                        <span>Primium Services</span>
+                        <span className=" text-gray-100 ">
+                          ₹ 1 Lac to 2.10 Lac
+                        </span>
+                        <span>Return 🠖 4X</span>
+                      </div>
+                      <div className="flex justify-between">
+                        <span>Platinum Services</span>
+                        <span className=" text-gray-100 ">
+                          ₹ 2 Lac to 4 Lac
+                        </span>
+                        <span>Return 🠖 4X</span>
                       </div>
                     </div>
                     <button className="w-full py-3 px-6 bg-teal-700 text-black font-semibold rounded-lg mt-4 hover:bg-teal-800 transition duration-200">
@@ -240,7 +247,7 @@ function Home() {
                       </span>
                     </li>
                   </ul>
-                  <div className="text-white space-y-4 pt-5">
+                  <div className="text-white space-y-4 pt-12">
                     <p className="font-bold text-lg">Pricing</p>
                     <div className="space-y-2">
                       <div className="flex justify-between">

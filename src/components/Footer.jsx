@@ -12,9 +12,9 @@ export default function Footer() {
   return (
     <footer className="bg-slate-200 pt-10">
       <div className="max-w-7xl mx-auto px-6 font-medium">
-        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-7 gap-6 lg:gap-8">
+        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-7 gap-10 lg:gap-24 p">
           {/* About Company Section */}
-          <div className="lg:col-span-2 flex flex-col items-start mb-6 lg:mb-0">
+          <div className="lg:col-span-3 flex flex-col items-start mb-6 lg:mb-0">
             <img
               src="/images/logo.png"
               alt="Company Logo"
@@ -30,7 +30,7 @@ export default function Footer() {
           </div>
 
           {/* Quick Links Section */}
-          <div className="lg:col-span-2 flex flex-col text-justify mb-6 lg:mb-0">
+          {/* <div className="lg:col-span-2 flex flex-col text-justify mb-6 lg:mb-0">
             <div className="text-xl uppercase font-bold mb-4 text-customTheme-theme1">
               Quick Links
             </div>
@@ -43,7 +43,7 @@ export default function Footer() {
               <LinkItem title="Our Branches" link="/" />
               <LinkItem title="Contact Us" link="/" />
             </div>
-          </div>
+          </div> */}
 
           {/* Contact Section */}
           <div className="md:col-span-3 flex flex-col items-start">

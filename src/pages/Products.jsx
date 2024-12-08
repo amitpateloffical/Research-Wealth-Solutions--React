@@ -8,7 +8,7 @@ const Products = () => {
       </header>
       <div className="flex justify-center  bg-gray-100 px-4 pt-8 pb-4">
      
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-6xl w- md:w-1/2 ">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-6xl w- md:w-2/3 ">
           {/* Card 1 */}
           <Link
             to="/page1"
@@ -21,8 +21,8 @@ const Products = () => {
               className="max-w-44 mx-auto mb-4"
             />
             {/* Heading */}
-            <h2 className="text-2xl font-bold text-teal-700">
-              Bullish India Direct
+            <h2 className="text-xl font-bold text-teal-700 pb-2">
+            Research Wealth Solutions Direct
             </h2>
           </Link>
 
@@ -38,8 +38,8 @@ const Products = () => {
               className="max-w-44 mx-auto mb-4"
             />
             {/* Heading */}
-            <h2 className="text-2xl font-bold text-teal-700">
-              Bullish India Smallcase
+            <h2 className="text-xl font-bold text-teal-700 pb-2">
+            Research Wealth Solutions Smallcase
             </h2>
           </Link>
         </div>
@@ -56,10 +56,10 @@ const Products = () => {
                     Products
                   </th>
                   <th className="py-4 px-6 text-lg font-semibold text-left">
-                    Bullish India Direct
+                  Research Wealth Solutions Direct
                   </th>
                   <th className="py-4 px-6 text-lg font-semibold text-left">
-                    Bullish India Smallcase
+                  Research Wealth Solutions Smallcase
                   </th>
                 </tr>
               </thead>
