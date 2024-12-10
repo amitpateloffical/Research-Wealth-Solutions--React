@@ -74,7 +74,7 @@ const OurBranches = () => {
 
   return (
     <>
-      <header className="bg-teal-700 text-white text-center py-6 shadow-lg">
+      <header className="bg-gradient-to-r from-teal-600 to-green-500 text-white text-center py-6 shadow-lg">
         <h1 className="text-3xl font-bold uppercase">Our Branches</h1>
       </header>
 

@@ -104,11 +104,11 @@ function Home() {
               alt=""
             />
 
-            <img
+            {/* <img
               src="https://goodluckcapital.com/wp-content/uploads/nism-logo.png"
               className="h-14"
               alt=""
-            />
+            /> */}
 
             <img
               src="https://goodluckcapital.com/wp-content/uploads/z3-1.png"

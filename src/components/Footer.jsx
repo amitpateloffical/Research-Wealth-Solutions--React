@@ -1,4 +1,4 @@
-import { Link } from "react-router-dom"; // Only import Link from react-router-dom
+// import { Link } from "react-router-dom"; // Only import Link from react-router-dom
 import { FaTelegramPlane } from "react-icons/fa";
 import { FaInstagram } from "react-icons/fa";
 import { FaSquareXTwitter } from "react-icons/fa6";
@@ -21,11 +21,13 @@ export default function Footer() {
               className="max-w-36 h-auto mb-3"
             />
             <p className="text-justify text-sm sm:text-base">
-              Research Wealth Solutions, led by our founder and Chief Analyst
-              Miss Shruti Mishra, Research Analyst service. With her impressive
-              academic background of B.Com and M.Com and her exceptional
-              expertise in the Indian Financial Market, Sanchi has been
-              passionately studying and analyzing the market for over a decade.
+              The mission of Research Wealth Solutions is to empower clients
+              with research-based guidance for informed investment decisions in
+              the Indian Financial Market. The company is dedicated to
+              simplifying and enhancing financial decision-making through
+              reliable and insightful analysis. By leveraging professional
+              expertise and deep market insights, Research Wealth Solutions
+              helps clients optimize their investment strategies effectively.
             </p>
           </div>
 
@@ -115,8 +117,11 @@ export default function Footer() {
 }
 
 // LinkItem Component (No longer imported from react-router-dom)
-const LinkItem = ({ title, link }) => (
-  <Link to={link} className="flex gap-3 items-center text-sm sm:text-base hover:text-customTheme-theme1">
-    <span>{title}</span>
-  </Link>
-);
+// const LinkItem = ({ title, link }) => (
+//   <Link
+//     to={link}
+//     className="flex gap-3 items-center text-sm sm:text-base hover:text-customTheme-theme1"
+//   >
+//     <span>{title}</span>
+//   </Link>
+// );

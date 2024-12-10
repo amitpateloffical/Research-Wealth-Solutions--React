@@ -1,7 +1,7 @@
 const AboutUs = () => {
     return (
       <>
-       <header className="bg-teal-700 text-white text-center py-6 shadow-lg">
+       <header className="bg-gradient-to-r from-teal-600 to-green-500 text-white text-center py-6 shadow-lg">
         <h1 className="text-3xl font-bold uppercase">ABOUT US</h1>
       </header>
       <div className="bg-gray-100 min-h-screen flex items-center justify-center px-4 py-8">
@@ -18,9 +18,7 @@ const AboutUs = () => {
                 <span className="font-semibold">Miss Shruti Mishra</span>,
                  Research Analyst service. With her impressive academic
                 background of <span className="italic">B.Com and M.Com</span> and
-                her exceptional expertise in the Indian Financial Market, Sanchi
-                has been passionately studying and analyzing the market for over
-                a decade.
+                her exceptional expertise in the Indian Financial Market.
               </p>
               <p>
                 Her passion for the stock market began at a young age while she

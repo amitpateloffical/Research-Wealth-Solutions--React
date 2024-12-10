@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 const Products = () => {
   return (
     <>
-      <header className="bg-teal-700 text-white text-center py-6 shadow-lg">
+      <header className="bg-gradient-to-r from-teal-600 to-green-500 text-white text-center py-6 shadow-lg">
         <h1 className="text-3xl font-bold uppercase">Products</h1>
       </header>
       <div className="flex justify-center  bg-gray-100 px-4 pt-8 pb-4">

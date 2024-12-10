@@ -1,124 +1,148 @@
-import { FaPhoneSquareAlt } from "react-icons/fa";
-import { FaWhatsappSquare } from "react-icons/fa";
+import { FaPhoneSquareAlt, FaWhatsappSquare } from "react-icons/fa";
 import { MdEmail } from "react-icons/md";
 import { IoLocationSharp } from "react-icons/io5";
 
-
 const ContactUs = () => {
+  const handleCopy = (text) => {
+    navigator.clipboard.writeText(text);
+    alert(`Copied: ${text}`);
+  };
+
+  const ContactItem = ({ icon, text, link, type }) => (
+    <div className="flex items-center gap-3">
+      {icon}
+      {type === "link" ? (
+        <a
+          href={link}
+          className="hover:underline text-lg"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          {text}
+        </a>
+      ) : (
+        <button
+          onClick={() => handleCopy(text)}
+          className="text-lg hover:underline focus:outline-none"
+        >
+          {text}
+        </button>
+      )}
+    </div>
+  );
+
   return (
     <>
-    {/* Header */}
-    <header className="bg-teal-700 text-white text-center py-6 shadow-lg">
-        <h1 className="text-3xl font-bold uppercase">Contact Us</h1>
+      {/* Header */}
+      <header className="bg-gradient-to-r from-teal-600 to-green-500 text-white text-center py-6 shadow-md">
+        <h1 className="text-3xl font-extrabold uppercase tracking-wide">
+          Contact Us
+        </h1>
       </header>
-      <div className="flex flex-col items-center justify-center min-h-screen bg-gray-100">
-        <div className="flex flex-col md:flex-row bg-white shadow-lg rounded-lg w-full max-w-4xl overflow-hidden">
+
+      <div className="flex flex-col items-center justify-center py-8 px-4 bg-gray-50">
+        <div className="flex flex-col md:flex-row bg-white shadow-xl rounded-lg w-full max-w-5xl overflow-hidden">
           {/* Left Section */}
-          <div className="bg-teal-600 text-white flex flex-col justify-center p-6 md:w-1/3">
-            <h2 className="text-2xl font-semibold mb-4">Contact Info</h2>
-            <p className="mb-2 flex items-center gap-2 ">
-              <strong><FaPhoneSquareAlt />
-              </strong> +91 7693898747
-            </p>
-           
-            <p className="mb-2 flex items-center gap-2">
-              <strong><FaWhatsappSquare />
-              </strong> +91 7693898747
-            </p>
-            <p className="mb-2 flex items-center gap-2">
-              <strong><MdEmail />
-              </strong> info@researchwealthsolutions.com
-            </p>
-            <p className="flex gap-2">
-              <strong><IoLocationSharp className="mt-1" />
-              </strong> SCO 150 & 55, Bridge Market, 17C, Sector 17, Chandigarh, 160017
-            </p>
+          <div className="bg-gradient-to-b from-teal-500 to-teal-700 text-white flex flex-col justify-center p-6 md:w-1/3">
+            <h2 className="text-2xl font-bold mb-4">Contact Info</h2>
+            <div className="space-y-5 text-base">
+              <ContactItem
+                icon={<FaPhoneSquareAlt className="text-lg" />}
+                text="+91 7693898747"
+                link="tel:+917693898747"
+                type="link"
+              />
+              <ContactItem
+                icon={<FaWhatsappSquare className="text-lg" />}
+                text="+91 7693898747"
+                link="https://wa.me/917693898747"
+                type="link"
+              />
+              <ContactItem
+                icon={<MdEmail className="text-lg" />}
+                text="info@researchwealthsolutions.com"
+                link="mailto:info@researchwealthsolutions.com"
+                type="link"
+              />
+              <ContactItem
+                icon={<IoLocationSharp className="text-lg" />}
+                text="SCO 150 & 55, Bridge Market, 17C, Sector 17, Chandigarh, 160017"
+                type="text"
+              />
+            </div>
           </div>
 
           {/* Right Section */}
-          <div className="flex-1 p-6">
-            <h2 className="text-2xl font-semibold text-gray-700 mb-4">
-              Contact Us
+          <div className="flex-1 p-6 bg-gray-50">
+            <h2 className="text-2xl font-bold text-gray-800 mb-4">
+              Get in Touch
             </h2>
-            <form className="space-y-4">
-              <div>
-                <label
-                  className="block text-gray-600 text-sm mb-1"
-                  htmlFor="name"
-                >
-                  Full Name
-                </label>
-                <input
-                  type="text"
-                  id="name"
-                  className="w-full px-3 py-2 border rounded-lg focus:outline-none focus:ring focus:ring-teal-600"
-                  placeholder="Enter your full name"
-                  required
-                />
+            <form className="space-y-5">
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-5">
+                <div>
+                  <label className="block text-gray-700 font-medium mb-1" htmlFor="name">
+                    Full Name
+                  </label>
+                  <input
+                    type="text"
+                    id="name"
+                    className="w-full px-3 py-2 border border-gray-300 rounded-lg shadow-sm focus:outline-none focus:ring focus:ring-teal-500"
+                    placeholder="Enter your full name"
+                    required
+                  />
+                </div>
+                <div>
+                  <label className="block text-gray-700 font-medium mb-1" htmlFor="email">
+                    Email
+                  </label>
+                  <input
+                    type="email"
+                    id="email"
+                    className="w-full px-3 py-2 border border-gray-300 rounded-lg shadow-sm focus:outline-none focus:ring focus:ring-teal-500"
+                    placeholder="Enter your email"
+                    required
+                  />
+                </div>
               </div>
               <div>
-                <label
-                  className="block text-gray-600 text-sm mb-1"
-                  htmlFor="email"
-                >
-                  Email
-                </label>
-                <input
-                  type="email"
-                  id="email"
-                  className="w-full px-3 py-2 border rounded-lg focus:outline-none focus:ring focus:ring-teal-600"
-                  placeholder="Enter your email"
-                  required
-                />
-              </div>
-              <div>
-                <label
-                  className="block text-gray-600 text-sm mb-1"
-                  htmlFor="number"
-                >
+                <label className="block text-gray-700 font-medium mb-1" htmlFor="number">
                   Phone Number
                 </label>
                 <input
                   type="tel"
                   id="number"
-                  className="w-full px-3 py-2 border rounded-lg focus:outline-none focus:ring focus:ring-teal-600"
+                  className="w-full px-3 py-2 border border-gray-300 rounded-lg shadow-sm focus:outline-none focus:ring focus:ring-teal-500"
                   placeholder="Enter your phone number"
                   required
                 />
               </div>
               <div>
-                <label
-                  className="block text-gray-600 text-sm mb-1"
-                  htmlFor="subject"
-                >
+                <label className="block text-gray-700 font-medium mb-1" htmlFor="subject">
                   Subject
                 </label>
                 <input
                   type="text"
                   id="subject"
-                  className="w-full px-3 py-2 border rounded-lg focus:outline-none focus:ring focus:ring-teal-600"
+                  className="w-full px-3 py-2 border border-gray-300 rounded-lg shadow-sm focus:outline-none focus:ring focus:ring-teal-500"
                   placeholder="Enter subject"
                   required
                 />
               </div>
               <div>
-                <label
-                  className="block text-gray-600 text-sm mb-1"
-                  htmlFor="message"
-                >
+                <label className="block text-gray-700 font-medium mb-1" htmlFor="message">
                   Message
                 </label>
                 <textarea
                   id="message"
-                  className="w-full px-3 py-2 border rounded-lg focus:outline-none focus:ring focus:ring-teal-600"
+                  className="w-full px-3 py-2 border border-gray-300 rounded-lg shadow-sm focus:outline-none focus:ring focus:ring-teal-500"
                   placeholder="Enter your message"
-                  rows="4"
+                  rows="3"
                   required
                 ></textarea>
               </div>
               <button
                 type="submit"
-                className="w-full bg-teal-600 text-white py-2 rounded-lg hover:bg-green-500 focus:outline-none focus:ring focus:ring-blue-300"
+                className="w-full bg-gradient-to-r from-teal-600 to-green-500 text-white py-2 rounded-lg font-medium hover:opacity-90 focus:outline-none focus:ring focus:ring-teal-300"
               >
                 Submit
               </button>
@@ -129,4 +153,5 @@ const ContactUs = () => {
     </>
   );
 };
+
 export default ContactUs;

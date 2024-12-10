@@ -1,8 +1,20 @@
 const IntradayCalls = () => {
+
+
+ // Get the current date dynamically
+ const currentDate = new Date();
+ const day = String(currentDate.getDate()).padStart(2, "0"); // Ensure two digits
+ const month = String(currentDate.getMonth() + 1).padStart(2, "0"); // Months are 0-indexed
+ const year = currentDate.getFullYear();
+
+ // Format the date as DD/MM/YYYY
+ const formattedDate = `${day}/${month}/${year}`;
+
+
   return (
     <div className="font-sans bg-gray-100">
       {/* Header */}
-      <header className="bg-teal-700 text-white text-center py-6 shadow-lg">
+      <header className="bg-gradient-to-r from-teal-600 to-green-500 text-white text-center py-6 shadow-lg">
         <h1 className="text-3xl font-bold uppercase">Intraday Calls</h1>
       </header>
 
@@ -28,7 +40,7 @@ const IntradayCalls = () => {
               </div>
               {/* Date */}
               <p className="absolute top-2 right-4 text-sm font-medium bg-white text-green-700 px-2 py-1 m-2 rounded-md shadow">
-                11/29/2024
+              {formattedDate}
               </p>
               {/* Title */}
               <h2 className="text-xl font-bold uppercase mt-2 tracking-wider">
@@ -81,7 +93,7 @@ const IntradayCalls = () => {
               </div>
               {/* Date */}
               <p className="absolute top-2 right-4 text-sm font-medium bg-white text-green-700 px-2 py-1 m-2 rounded-md shadow">
-                11/29/2024
+              {formattedDate}
               </p>
               {/* Title */}
               <h3 className="text-xl font-bold mt-4 uppercase">HUDCO</h3>
@@ -119,7 +131,7 @@ const IntradayCalls = () => {
               </div>
               {/* Date */}
               <p className="absolute top-2 right-4 text-sm font-medium bg-white text-green-700 px-2 py-1 m-2 rounded-md shadow">
-                11/29/2024
+               {formattedDate}
               </p>
               {/* Title */}
               <h3 className="text-xl font-bold mt-4 uppercase">MAZDOCK</h3>
@@ -157,7 +169,7 @@ const IntradayCalls = () => {
               </div>
               {/* Date */}
               <p className="absolute top-2 right-4 text-sm font-medium bg-white text-green-700 px-2 py-1 m-2 rounded-md shadow">
-                11/29/2024
+              {formattedDate}
               </p>
               {/* Title */}
               <h3 className="text-xl font-bold mt-4 uppercase">NTPC GREEN</h3>
