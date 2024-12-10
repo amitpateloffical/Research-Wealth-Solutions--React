@@ -114,13 +114,13 @@ const Services = () => {
                 <div className="space-y-2">
                   <div className="flex justify-between">
                     <span>6 Months</span>
-                    <span className="line-through text-gray-800">₹ 26000</span>
-                    <span>₹ 16,900</span>
+                    <span className="line-through text-gray-800">₹ 30000</span>
+                    <span>₹ 25,000</span>
                   </div>
                   <div className="flex justify-between">
                     <span>12 Months</span>
-                    <span className="line-through text-gray-800">₹ 52000</span>
-                    <span>₹ 25,900</span>
+                    <span className="line-through text-gray-800">₹ 55000</span>
+                    <span>₹ 50,000</span>
                   </div>
                 </div>
                 <button className="w-full py-3 px-6 bg-teal-700 text-black font-semibold rounded-lg mt-4 hover:bg-teal-800 transition duration-200">

@@ -59,13 +59,13 @@ const ContactUs = () => {
                 type="link"
               />
               <ContactItem
-                icon={<MdEmail className="text-lg" />}
+                icon={<MdEmail className="text-xl" />}
                 text="info@researchwealthsolutions.com"
                 link="mailto:info@researchwealthsolutions.com"
                 type="link"
               />
               <ContactItem
-                icon={<IoLocationSharp className="text-lg" />}
+                icon={<IoLocationSharp className="text-3xl" />}
                 text="SCO 150 & 55, Bridge Market, 17C, Sector 17, Chandigarh, 160017"
                 type="text"
               />
@@ -80,7 +80,10 @@ const ContactUs = () => {
             <form className="space-y-5">
               <div className="grid grid-cols-1 md:grid-cols-2 gap-5">
                 <div>
-                  <label className="block text-gray-700 font-medium mb-1" htmlFor="name">
+                  <label
+                    className="block text-gray-700 font-medium mb-1"
+                    htmlFor="name"
+                  >
                     Full Name
                   </label>
                   <input
@@ -92,7 +95,10 @@ const ContactUs = () => {
                   />
                 </div>
                 <div>
-                  <label className="block text-gray-700 font-medium mb-1" htmlFor="email">
+                  <label
+                    className="block text-gray-700 font-medium mb-1"
+                    htmlFor="email"
+                  >
                     Email
                   </label>
                   <input
@@ -105,7 +111,10 @@ const ContactUs = () => {
                 </div>
               </div>
               <div>
-                <label className="block text-gray-700 font-medium mb-1" htmlFor="number">
+                <label
+                  className="block text-gray-700 font-medium mb-1"
+                  htmlFor="number"
+                >
                   Phone Number
                 </label>
                 <input
@@ -117,7 +126,10 @@ const ContactUs = () => {
                 />
               </div>
               <div>
-                <label className="block text-gray-700 font-medium mb-1" htmlFor="subject">
+                <label
+                  className="block text-gray-700 font-medium mb-1"
+                  htmlFor="subject"
+                >
                   Subject
                 </label>
                 <input
@@ -129,7 +141,10 @@ const ContactUs = () => {
                 />
               </div>
               <div>
-                <label className="block text-gray-700 font-medium mb-1" htmlFor="message">
+                <label
+                  className="block text-gray-700 font-medium mb-1"
+                  htmlFor="message"
+                >
                   Message
                 </label>
                 <textarea

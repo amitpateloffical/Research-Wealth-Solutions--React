@@ -138,7 +138,7 @@ const OurBranches = () => {
       <div>
         <h1 className="text-2xl  font-bold uppercase mb-3">What Do We Include In Our Multibagger Stocks (Stocks 10x)?</h1>
         <ul className="list-disc pl-6 space-y-2 text-gray-600 text-base">
-          <li>Bullish India offers five stocks in multibagger stocks per year.</li>
+          <li>Research Wealth Solutions offers five stocks in multibagger stocks per year.</li>
           <li>You can hold these stocks for 6 months (minimum) to 1 year or 2 years (maximum).</li>
           <li>Multibagger is the best way to make a profit because in intraday trading if you make income in one day, you can lose it the very next day. But in delivery, if you hold good stocks, you can earn a huge profit.</li>
           <li>Each share will be provided to you with a gap of 2 or 3 months.</li>

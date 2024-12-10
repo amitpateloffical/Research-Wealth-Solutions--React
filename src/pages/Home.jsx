@@ -11,7 +11,7 @@ function Home() {
   const data = [
     {
       detail:
-        "Goodluck Capital would be the first investment solution that encourages its students / clients to do their own research as well. Thanks for your continuous support!",
+        "Research Wealth Solutions would be the first investment solution that encourages its students / clients to do their own research as well. Thanks for your continuous support!",
       name: "Siddharth",
       profession: "It Professional",
       image: "",
@@ -91,7 +91,7 @@ function Home() {
           <h2 className="text-xl md:text-3xl lg:text-3xl font-bold text-center text-gray-700 pt-10 uppercase">
             Certified Market Expert By
           </h2>
-          <div className="grid grid-cols-1 md:grid-cols-4 gap-12 lg:gap-28 px-40 lg:mx-28 pt-10 lg:pt-20">
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-12 lg:gap-28 px-40 lg:mx-28 pt-10 lg:pt-20">
             <img
               src="https://goodluckcapital.com/wp-content/uploads/header-logo-300x96.png"
               className="h-14"
@@ -177,7 +177,7 @@ function Home() {
                         <span>6 Months</span>
                       </div>
                       <div className="flex justify-between">
-                        <span>Premium Ragiatration</span>
+                        <span>Premium Registration</span>
                         <span className=" text-gray-100 ">
                         ₹ 12500
                         </span>
@@ -191,7 +191,7 @@ function Home() {
                         <span>3 Months</span>
                       </div>
                       <div className="flex justify-between">
-                        <span>Primium Services</span>
+                        <span>Premium Services</span>
                         <span className=" text-gray-100 ">
                           ₹ 1 Lac to 2.10 Lac
                         </span>
@@ -255,14 +255,14 @@ function Home() {
                         <span className="line-through text-gray-400">
                           ₹ 26000
                         </span>
-                        <span>₹ 16,900</span>
+                        <span>₹ 25,000</span>
                       </div>
                       <div className="flex justify-between">
                         <span>12 Months</span>
                         <span className="line-through text-gray-400">
                           ₹ 52000
                         </span>
-                        <span>₹ 25,900</span>
+                        <span>₹ 50,000</span>
                       </div>
                     </div>
                     <button className="w-full py-3 px-6 bg-teal-700 text-black font-semibold rounded-lg mt-4 hover:bg-teal-800 transition duration-200">
