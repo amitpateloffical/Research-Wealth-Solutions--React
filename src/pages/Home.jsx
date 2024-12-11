@@ -11,7 +11,7 @@ function Home() {
   const data = [
     {
       detail:
-        "Research Wealth Solutions would be the first investment solution that encourages its students / clients to do their own research as well. Thanks for your continuous support!",
+        "Goodluck Capital would be the first investment solution that encourages its students / clients to do their own research as well. Thanks for your continuous support!",
       name: "Siddharth",
       profession: "It Professional",
       image: "",
@@ -123,10 +123,10 @@ function Home() {
           <img
             src="https://static.vecteezy.com/system/resources/thumbnails/019/569/174/small_2x/stock-market-bull-vs-bear-graph-stock-market-graph-trading-investment-financial-stock-exchange-financial-stock-graph-chart-business-crisis-crash-loss-grow-up-gain-profits-win-up-trend-bullish-bearish-free-photo.jpg"
             alt="Banner Image"
-            className="w-full object-cover min-h-[40rem] max-h-[50rem]" // Increased height for a taller banner
+            className="object-cover absolute top-0 left-0 h-full w-full" // Increased height for a taller banner
           />
           {/* Overlay Gradient */}
-          <div className="absolute top-0 left-0 w-full h-full bg-gradient-to-r from-teal-700 via-blue-700 to-lime-800 opacity-80 flex items-center">
+          <div className="relative z-10  bg-gradient-to-r from-teal-700 via-blue-700 to-lime-800 opacity-80 flex items-center py-8">
             <div className="max-w-6xl mx-auto px-6 sm:px-8 lg:px-16">
               <h2 className="text-5xl font-bold text-center text-white mb-12">
                 What We Do
@@ -171,16 +171,12 @@ function Home() {
                     <div className="space-y-2  ">
                       <div className="flex justify-between">
                         <span>Basic Registration</span>
-                        <span className=" text-gray-100 ">
-                          ₹ 5500
-                        </span>
+                        <span className=" text-gray-100 ">₹ 5500</span>
                         <span>6 Months</span>
                       </div>
                       <div className="flex justify-between">
                         <span>Premium Registration</span>
-                        <span className=" text-gray-100 ">
-                        ₹ 12500
-                        </span>
+                        <span className=" text-gray-100 ">₹ 12500</span>
                         <span>12 Months</span>
                       </div>
                       <div className="flex justify-between">
@@ -191,7 +187,7 @@ function Home() {
                         <span>3 Months</span>
                       </div>
                       <div className="flex justify-between">
-                        <span>Premium Services</span>
+                        <span>Primium Services</span>
                         <span className=" text-gray-100 ">
                           ₹ 1 Lac to 2.10 Lac
                         </span>
@@ -253,14 +249,14 @@ function Home() {
                       <div className="flex justify-between">
                         <span>6 Months</span>
                         <span className="line-through text-gray-400">
-                          ₹ 26000
+                          ₹ 30000
                         </span>
                         <span>₹ 25,000</span>
                       </div>
                       <div className="flex justify-between">
                         <span>12 Months</span>
                         <span className="line-through text-gray-400">
-                          ₹ 52000
+                          ₹ 55000
                         </span>
                         <span>₹ 50,000</span>
                       </div>
