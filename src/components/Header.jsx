@@ -5,6 +5,16 @@ function Header() {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false); // State to manage menu visibility
   const { origin } = location;
 
+  // Function to toggle the menu visibility
+  const toggleMenu = () => {
+    setIsMobileMenuOpen(!isMobileMenuOpen);
+  };
+
+  // Function to close the menu when a link is clicked
+  const closeMenu = () => {
+    setIsMobileMenuOpen(false);
+  };
+
   return (
     <>
       <header className="px-4 py-3 bg-white shadow-md">
@@ -73,7 +83,7 @@ function Header() {
           {/* Mobile Menu Toggle */}
           <button
             className="block md:hidden p-2 text-gray-500 hover:text-gray-700 focus:outline-none"
-            onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)} // Toggle menu state
+            onClick={toggleMenu} // Toggle menu state
           >
             <svg
               className="h-6 w-6"
@@ -99,48 +109,56 @@ function Header() {
               <Link
                 to="/"
                 className="uppercase font-medium text-sm border-b-2 border-transparent transition-colors duration-300 hover:border-customTheme-theme1"
+                onClick={closeMenu} // Close menu on link click
               >
                 Home
               </Link>
               <Link
                 to="/about-us"
                 className="uppercase font-medium text-sm border-b-2 border-transparent transition-colors duration-300 hover:border-customTheme-theme1"
+                onClick={closeMenu} // Close menu on link click
               >
                 About Us
               </Link>
               <Link
                 to="/services"
                 className="uppercase font-medium text-sm border-b-2 border-transparent transition-colors duration-300 hover:border-customTheme-theme1"
+                onClick={closeMenu} // Close menu on link click
               >
                 Services
               </Link>
               <Link
                 to="/products"
                 className="uppercase font-medium text-sm border-b-2 border-transparent transition-colors duration-300 hover:border-customTheme-theme1"
+                onClick={closeMenu} // Close menu on link click
               >
                 Products
               </Link>
               <Link
                 to="/intraday-calls"
                 className="uppercase font-medium text-sm border-b-2 border-transparent transition-colors duration-300 hover:border-customTheme-theme1"
+                onClick={closeMenu} // Close menu on link click
               >
                 Intraday Calls
               </Link>
               <Link
-                to="/branches"
+                to="/our-branches"
                 className="uppercase font-medium text-sm border-b-2 border-transparent transition-colors duration-300 hover:border-customTheme-theme1"
+                onClick={closeMenu} // Close menu on link click
               >
                 Our Branches
               </Link>
               <Link
                 to="/contact"
                 className="uppercase font-medium text-sm border-b-2 border-transparent transition-colors duration-300 hover:border-customTheme-theme1"
+                onClick={closeMenu} // Close menu on link click
               >
                 Contact Us
               </Link>
               <Link
                 to="/login"
                 className="uppercase font-medium text-sm cursor-pointer px-5 py-2 text-white rounded bg-customTheme-theme1 hover:bg-customTheme-theme2"
+                onClick={closeMenu} // Close menu on link click
               >
                 Log In
               </Link>

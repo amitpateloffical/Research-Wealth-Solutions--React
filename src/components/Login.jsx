@@ -14,7 +14,11 @@ const Login = () => {
   };
 
   return (
-    <div className="flex items-center justify-center min-h-screen bg-gray-100">
+<>
+    <header className="bg-gradient-to-r from-teal-600 to-green-500 text-white text-center py-6 shadow-lg">
+    <h1 className="text-3xl font-bold uppercase">Login</h1>
+  </header>
+    <div className="flex items-center justify-center h-full p-6 bg-gray-100 p-6 md:p-10 md:px-8">
       <div className="max-w-md w-full bg-white rounded-lg shadow-md px-8 py-8">
         <div className="pb-4 max-w-44 mx-auto text-center">
           <img src="/images/logo.png" alt=""  />
@@ -102,6 +106,7 @@ const Login = () => {
         </p> */}
       </div>
     </div>
+    </>
   );
 };
 

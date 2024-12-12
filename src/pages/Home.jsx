@@ -41,6 +41,12 @@ function Home() {
       image: "",
     },
   ];
+  const numbers = [
+    { value: "14", text: "Years wealth creation experience" },
+    { value: "85%", text: "Trading Success" },
+    { value: "96%", text: "Investment Success" },
+    { value: "2000+", text: "Client Satisfaction" },
+  ];
 
   return (
     <>
@@ -87,36 +93,31 @@ function Home() {
         </div>
 
         {/* Certified Market Expert By */}
-        <div className="w-full h-[32rem] lg:h-[18rem] bg-white">
-          <h2 className="text-xl md:text-3xl lg:text-3xl font-bold text-center text-gray-700 pt-10 uppercase">
-            Certified Market Expert By
-          </h2>
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-12 lg:gap-28 px-40 lg:mx-28 pt-10 lg:pt-20">
-            <img
-              src="https://goodluckcapital.com/wp-content/uploads/header-logo-300x96.png"
-              className="h-14"
-              alt=""
-            />
+        <div className="w-full h-[28rem] lg:h-[18rem] bg-white p-5 flex flex-col items-center justify-center">
+  <h2 className="text-xl md:text-3xl lg:text-3xl font-bold text-center text-gray-700 uppercase mb-8 text-shadow-md">
+    Certified Market Expert By
+  </h2>
+  <div className="grid grid-cols-1 md:grid-cols-3 gap-8 lg:gap-28 px-8 lg:px-20 pt-6">
+    <img
+      src="https://goodluckcapital.com/wp-content/uploads/header-logo-300x96.png"
+      className="h-12 mx-auto"
+      alt="Certified Market Expert 1"
+    />
+      <img
+      src="https://goodluckcapital.com/wp-content/uploads/z3-1.png"
+      className="h-16 w-36 mx-auto" 
+      alt="Certified Market Expert 3"
+    />
+    <img
+      src="https://goodluckcapital.com/wp-content/uploads/IFTA-logo-1-300x77.jpg"
+      className="h-14 mx-auto" 
+      alt="Certified Market Expert 2"
+    />
+  
+  </div>
+</div>
 
-            <img
-              src="https://goodluckcapital.com/wp-content/uploads/IFTA-logo-1-300x77.jpg"
-              className="h-14"
-              alt=""
-            />
 
-            {/* <img
-              src="https://goodluckcapital.com/wp-content/uploads/nism-logo.png"
-              className="h-14"
-              alt=""
-            /> */}
-
-            <img
-              src="https://goodluckcapital.com/wp-content/uploads/z3-1.png"
-              className="h-14"
-              alt=""
-            />
-          </div>
-        </div>
 
         {/* What we Do */}
         <div className="relative">
@@ -272,46 +273,19 @@ function Home() {
         </div>
 
         {/* Our Power is Numbers */}
-        <div className="w-full h-[54rem] lg:h-[20rem] bg-white mt-10 lg:mx-auto pt-5 lg:p-2 rounded-lg  ">
-          <h2 className="text-center text-2xl md:text-3xl lg:text-3xl font-bold text-gray-700 pt-5 uppercase">
-            Our Power is Numbers
-          </h2>
-          <div className="flex flex-col lg:flex-row justify-evenly px-36 gap-7 lg:gap-10 pt-10 lg:pt-20">
-            <div>
-              <h2 className="text-7xl text-center text-gray-400 mb-4">14</h2>
-              <p className="uppercase text-sm font-bold text-teal-800">
-                Years wealth creation experience
-              </p>
-            </div>
-
-            <div className="w-[2px] full bg-gray-300"></div>
-
-            <div>
-              <h2 className="text-7xl  text-gray-400 mb-4">85%</h2>
-              <p className="uppercase text-sm font-bold text-teal-800">
-                Trading Success
-              </p>
-            </div>
-
-            <div className="w-[2px] full bg-gray-300"></div>
-
-            <div>
-              <h2 className="text-7xl text-gray-400 mb-4">96%</h2>
-              <p className="uppercase text-sm font-bold text-teal-800">
-                Investment Success
-              </p>
-            </div>
-
-            <div className="w-[2px] full bg-gray-300"></div>
-
-            <div>
-              <h2 className="text-7xl text-gray-400 mb-4">2000+</h2>
-              <p className="uppercase text-sm font-bold text-teal-800">
-                Client Satisfication
-              </p>
-            </div>
+        <div className="w-full h-auto bg-white mt-6 mb-8 lg:mx-auto lg:p-8 rounded-lg">
+      <h2 className="text-center text-2xl md:text-3xl lg:text-3xl font-bold text-gray-700 py-5 uppercase text-shadow-lg">
+        Our Power is Numbers
+      </h2>
+      <div className="flex flex-col items-center lg:flex-row justify-evenly px-8 lg:px-20 pt-6 gap-6 lg:gap-12">
+        {numbers.map((item, index) => (
+          <div key={index} className="text-center mb-6 lg:mb-0">
+            <h2 className="text-6xl font-bold text-blue-600 mb-2">{item.value}</h2>
+            <p className="uppercase text-sm font-bold text-teal-900 pt-2">{item.text}</p>
           </div>
-        </div>
+        ))}
+      </div>
+    </div>
 
         {/* Subscribe with Us */}
         <div className="w-full h-auto bg-gradient-to-r from-teal-700 via-green-700 to-lime-800 py-10 lg:py-16 rounded-lg shadow-lg">
