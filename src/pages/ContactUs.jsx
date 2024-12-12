@@ -10,11 +10,11 @@ const ContactUs = () => {
 
   const ContactItem = ({ icon, text, link, type }) => (
     <div className="flex items-center gap-3">
-      {icon}
+      <div className="text-4xl md:text-5xl">{icon}</div> {/* Ensures larger icon size */}
       {type === "link" ? (
         <a
           href={link}
-          className="hover:underline text-lg"
+          className="hover:underline text-sm md:text-base"
           target="_blank"
           rel="noopener noreferrer"
         >
@@ -23,7 +23,7 @@ const ContactUs = () => {
       ) : (
         <button
           onClick={() => handleCopy(text)}
-          className="text-lg hover:underline focus:outline-none"
+          className="text-sm md:text-base hover:underline focus:outline-none"
         >
           {text}
         </button>
@@ -34,16 +34,16 @@ const ContactUs = () => {
   return (
     <>
       {/* Header */}
-      <header className="bg-gradient-to-r from-teal-600 to-green-500 text-white text-center py-6 shadow-md">
+      <header className="bg-gradient-to-r from-teal-600 to-green-500 text-white text-center py-4 shadow-md">
         <h1 className="text-3xl font-extrabold uppercase tracking-wide">
           Contact Us
         </h1>
       </header>
 
-      <div className="flex flex-col items-center justify-center py-8 px-4 bg-gray-50">
+      <div className="flex flex-col items-center justify-center py-8 px-4 bg-gray-100">
         <div className="flex flex-col md:flex-row bg-white shadow-xl rounded-lg w-full max-w-5xl overflow-hidden">
           {/* Left Section */}
-          <div className="bg-gradient-to-b from-teal-500 to-teal-700 text-white flex flex-col justify-center p-6 md:w-1/3">
+          <div className="bg-gradient-to-b from-teal-500 to-teal-700 text-white flex flex-col justify-center p-6 md:w-1/3 hidden md:flex">
             <h2 className="text-2xl font-bold mb-4">Contact Info</h2>
             <div className="space-y-5 text-base">
               <ContactItem
@@ -65,7 +65,7 @@ const ContactUs = () => {
                 type="link"
               />
               <ContactItem
-                icon={<IoLocationSharp className="text-3xl" />}
+                icon={<IoLocationSharp className="text-2xl" />}
                 text="SCO 150 & 55, Bridge Market, 17C, Sector 17, Chandigarh, 160017"
                 type="text"
               />
