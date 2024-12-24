@@ -1,4 +1,4 @@
-import  { useState } from "react";
+import { useState } from "react";
 
 const Login = () => {
   const [formData, setFormData] = useState({ username: "", password: "" });
@@ -14,10 +14,10 @@ const Login = () => {
   };
 
   return (
-    <div className="flex items-center justify-center min-h-screen bg-gray-100">
+    <div className="flex  items-center justify-center min-h-screen bg-gray-100">
       <div className="max-w-md w-full bg-white rounded-lg shadow-md px-8 py-8">
         <div className="pb-4 max-w-44 mx-auto text-center">
-          <img src="/images/logo.png" alt=""  />
+          <img src="/images/logo.png" alt="" />
         </div>
         <h2 className="text-2xl font-bold text-center text-gray-700 mb-6">
           Login to Your Account
@@ -69,10 +69,7 @@ const Login = () => {
               id="remember-me"
               className="w-4 h-4 bg-customTheme-theme1 border-gray-300 rounded focus:ring-customTheme-theme1 focus:ring-opacity-25"
             />
-            <label
-              htmlFor="remember-me"
-              className="ml-2 text-sm text-gray-600"
-            >
+            <label htmlFor="remember-me" className="ml-2 text-sm text-gray-600">
               Remember Me
             </label>
           </div>

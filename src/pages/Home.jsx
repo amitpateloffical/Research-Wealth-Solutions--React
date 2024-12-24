@@ -36,7 +36,7 @@ function Home() {
 
     {
       detail:
-        "I am taking positional trading services from research wealth Solutions since last year and they  are providing me very balance and consistent profit. Thanks for your contniuous support.",
+        "I am taking positional trading services from research wealth Solutions since last year and they are providing me very balance and consistent profit. Thanks for your contniuous support.",
       name: "Arpita",
       profession: "Architect",
       image: "",
